@@ -78,12 +78,3 @@ html{
     color: var(--font-white);
     margin: 2rem 0;
 }
-
-
-.bg{
-    background-image: url(assets/backgrounds/background.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 50rem;
-    height: 50rem;
-}
