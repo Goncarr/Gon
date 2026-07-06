@@ -40,8 +40,8 @@ html{
     --gon-border: #F19D4D;
     --gon-font: #F19D4D;
     --gon-header: #FDEFE1;
-    --profile: url('/sonas/gon.jpg');
-    background-image: url('./public/backgrounds/background.png');
+    --profile: url('sonas/gon.jpg');
+    background-image: url('backgrounds/background.png');
 }
 
 [data-theme='banshee'] {
@@ -49,7 +49,7 @@ html{
     --gon-font: white;
     --gon-border: #30034E;
     --gon-header: #121013;
-    --profile: url('/sonas/banshee.png');
+    --profile: url('sonas/banshee.png');
     background-color: grey;
     background-image: none;
 }
