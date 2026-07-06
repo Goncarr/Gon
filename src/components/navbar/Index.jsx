@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react'
 import './NavBar.css'
 
-export default function NavBar({sonaUpdate}){
+export default function NavBar({currentSona,sonaUpdate}){
+    const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
     const [dropMenu,setDropMenu] = useState(false);
 
     const handleThemeChange = (themeName) => {
@@ -16,6 +17,7 @@ export default function NavBar({sonaUpdate}){
                         <div className="dropdown">
                             <button className="dropbtn" onClick={() => setDropMenu(!dropMenu)}>
                                 <img/>
+                                <p>{currentSona}</p>
                             </button>
                             {dropMenu &&(
                                 <div className="dropdown-content">
@@ -32,10 +34,16 @@ export default function NavBar({sonaUpdate}){
                             }
                         </div>
 
-                        <ul>
-                            <li><a href='#about'>ABOUT</a></li>
-                            <li><a href='#art'>ART</a></li>
-                            <li><a href='#socials'>SOCIALS</a></li>
+                        <button className="hamburger" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
+                            <span className={`bar ${mobileMenuOpen ? 'open' : ''}`}></span>
+                            <span className={`bar ${mobileMenuOpen ? 'open' : ''}`}></span>
+                            <span className={`bar ${mobileMenuOpen ? 'open' : ''}`}></span>
+                        </button>
+
+                        <ul className={`nav-links ${mobileMenuOpen ? 'active' : ''}`}>
+                            <li><a href='#about' onClick={() => setMobileMenuOpen(false)}>ABOUT</a></li>
+                            <li><a href='#art' onClick={() => setMobileMenuOpen(false)}>ART</a></li>
+                            <li><a href='#socials' onClick={() => setMobileMenuOpen(false)}>SOCIALS</a></li>
                         </ul>
                     </div>
                 </nav>

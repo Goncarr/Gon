@@ -1,7 +1,6 @@
 /***************************
 ABOUT CONTAINER
 ****************************/
-
 .about-container{
     width: 100%;
     display: flex;
@@ -14,8 +13,8 @@ ABOUT CONTAINER
 }
 
 .about-container img {
-    width: clamp(8rem, 20vw,30rem);
-    height: clamp(8rem, 20vw,30rem);
+    width: clamp(13rem, 15vw, 30rem);
+    height: clamp(13rem, 15vw, 30rem);
 }
 
 .about-container p{
@@ -23,7 +22,7 @@ ABOUT CONTAINER
     font-size: var(--default-font-size);
 }
 
-@media (max-width: 600px) {
+@media (max-width: 750px) {
     .about-container{
         flex-direction: column;
         justify-content: flex-start;

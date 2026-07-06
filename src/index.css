@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Jaldi:wght@400;700&display=swap");
 
+/***************************
+DEFAULT PARAMENTERS
+****************************/
+
 *{
   padding: 0;
   margin: 0;
@@ -8,32 +12,38 @@
   font-weight: bold;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body, html {
     margin: 0;
     padding: 0;
     min-height: 100vh;
     width: 100%;
-    /* These properties ensure the background behaves perfectly global-wide */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed; 
 }
 
+/***************************
+ROOT
+****************************/
 :root{
     --gon-background: #F7C697;
     --gon-border: #F19D4D;
     --gon-header: #FDEFE1;
     --font-white: #FFFFFF;
     --gon-font: #F19D4D;
-    --default-font-size: clamp(1rem, 2.5vw, 4rem);
-    --titles-font-size: clamp(2rem, 3.5vw, 6rem)
+    --default-font-size: clamp(2rem, 2.5vw, 4rem);
+    --titles-font-size: clamp(3rem, 3.5vw, 6rem)
 
 }
 
-html{
-    scroll-behavior: smooth;
-}
+/***************************
+SONAS THEMES
+****************************/
 
 [data-theme='gon'] {
     --gon-background: #F7C697;
@@ -53,6 +63,10 @@ html{
     background-color: grey;
     background-image: none;
 }
+
+/***************************
+MAIN CONTAINERS
+****************************/
 
 .main-container{
     display: flex;
@@ -77,4 +91,21 @@ html{
     font-size: var(--titles-font-size);
     color: var(--font-white);
     margin: 2rem 0;
+}
+
+
+/***************************
+MOBILE QUERY
+****************************/
+@media (max-width:750px){
+
+
+    .content-container h2{
+        margin: 1rem 0;
+    }
+
+    .content-container{
+        width: 95%;
+        padding: .5rem 1rem;
+    }
 }

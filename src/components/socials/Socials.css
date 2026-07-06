@@ -3,11 +3,12 @@ SOCIALS
 ****************************/
 .socials-container{
     display: flex;
+    margin-top: 1rem;
 }
 
 a img{
-    width: clamp(2rem,3.5vw,5rem);
-    height: clamp(2rem,3.5vw,5rem);
+    width: clamp(3rem,3.5vw,5rem);
+    height: clamp(3rem,3.5vw,5rem);
     transition: .3s;
 }
 

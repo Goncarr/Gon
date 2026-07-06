@@ -3,7 +3,7 @@ export const artGallery = [
         id: "1",
         sona: "gon",
         src: "art/gon-art1.png",
-        artist: "Kirikonoart",
+        artist: "@Kirikonoart",
         href: "https://www.tiktok.com/@kirikonoart"
 
     },
@@ -39,15 +39,15 @@ export const artGallery = [
         id: "6",
         sona: "gon",
         src: "art/gon-art6.jpg",
-        artist: "Kirikonoart",
+        artist: "@Kirikonoart",
         href: "https://www.tiktok.com/@kirikonoart"
     },
     {
         id: "7",
         sona: "gon",
         src: "art/gon-art7.png",
-        artist: "loona13",
-        href: "#"
+        artist: "@loona13",
+        href: "https://x.com/lonaa_211"
     },
     {
         id: "8",
@@ -60,7 +60,7 @@ export const artGallery = [
         id: "9",
         sona: "gon",
         src: "art/gon-art9.png",
-        artist: "split",
+        artist: "@split",
         href: ""
     },
         {
@@ -76,6 +76,13 @@ export const artGallery = [
         src: "art/gon-art8.png",
         artist: "@twx_p",
         href: "https://www.tiktok.com/@twx_p"
+    },
+    {
+        id: "12",
+        sona: "gon",
+        src: "art/gon-art11.png",
+        artist: "@LanderM09",
+        href: "https://x.com/LanderM09"
     },
     
 ]
