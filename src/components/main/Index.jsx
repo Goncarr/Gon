@@ -3,7 +3,6 @@ import NavBar from '../NavBar/Index.jsx'
 import Socials from '../Socials/Index.jsx'
 import Art from '../art/Index.jsx'
 import AboutMe from '../AboutMe/Index.jsx'
-import '../../App.css'
 import { useEffect } from 'react'
 import ScrollTrigger from 'gsap/ScrollTrigger'
 import gsap from 'gsap'
@@ -34,7 +33,7 @@ export default function Main(){
     }, [sonaType])
 
     return (
-            <div ref={mainRef} className='main-container'>
+            <div ref={mainRef} role='main' className='main-container'>
                 
                 <NavBar currentSona={sonaType} sonaUpdate={setSonaType} />
                 

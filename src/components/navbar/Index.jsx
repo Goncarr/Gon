@@ -16,7 +16,7 @@ export default function NavBar({currentSona,sonaUpdate}){
                     <div className="header-container">
                         <div className="dropdown">
                             <button className="dropbtn" onClick={() => setDropMenu(!dropMenu)}>
-                                <img/>
+                                <img alt=''/>
                                 <p>{currentSona}</p>
                             </button>
                             {dropMenu &&(
@@ -34,7 +34,7 @@ export default function NavBar({currentSona,sonaUpdate}){
                             }
                         </div>
 
-                        <button className="hamburger" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
+                        <button className="mobile-dropdown-menu" aria-label="search" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
                             <span className={`bar ${mobileMenuOpen ? 'open' : ''}`}></span>
                             <span className={`bar ${mobileMenuOpen ? 'open' : ''}`}></span>
                             <span className={`bar ${mobileMenuOpen ? 'open' : ''}`}></span>

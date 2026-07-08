@@ -12,7 +12,7 @@ export default function AboutMe({sonaUpdate}){
                         if (sonaUpdate == currentSona.sona)
                             {
                                 return (
-                                <div id='#about' className="about-container">
+                                <div key={currentSona.key} id='#about' className="about-container">
                                     <p>{currentSona.text}</p>
                                     <img src={currentSona.image} alt={currentSona.alt}></img>
                                 </div>

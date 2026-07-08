@@ -15,8 +15,8 @@ export default function Art({sonaUpdate}){
             {artGallery.map(art => {
                 if (art.sona.includes(sonaUpdate))
                 return(
-                <div className="artist-container">
-                    <img src={art.src}></img>
+                <div key={art.id} className="artist-container">
+                    <img src={art.src} alt={art.alt}></img>
                     <a href={art.href}>{art.artist}</a>
                 </div>)
                 })

@@ -20,6 +20,7 @@ ABOUT CONTAINER
 .about-container p{
     color: var(--gon-font);
     font-size: var(--default-font-size);
+    white-space: pre-line;
 }
 
 @media (max-width: 750px) {
